@@ -18,10 +18,13 @@
     "format": "prettier --write \"**/*.{ts,tsx,md,mdx,json}\""
   },
   "devDependencies": {
+    "@eslint/js": "^10.0.1",
+    "@humanwhocodes/config-array": "^0.13.0",
+    "@humanwhocodes/object-schema": "^2.0.3",
     "@types/react": "^18.3.3",
     "@types/react-dom": "^18.3.0",
     "autoprefixer": "^10.4.19",
-    "eslint": "^8.57.0",
+    "eslint": "^10.0.3",
     "postcss": "^8.4.38",
     "prettier": "^3.2.5",
     "react": "^18.3.1",

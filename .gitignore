@@ -17,3 +17,20 @@ storybook-static/
 
 #!.yarn/cache
 .pnp.*
+
+# Build artifacts
+dist/
+storybook-static/
+.turbo/
+
+# Logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+yarn-error.json
+.pnpm-debug.log*
+
+# OS files
+.DS_Store
+Thumbs.db

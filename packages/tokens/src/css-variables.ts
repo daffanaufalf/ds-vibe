@@ -10,7 +10,8 @@ function flattenTokens(obj: TokenObject, prefix: string): Record<string, string>
   const flattened: Record<string, string> = {};
 
   for (const [key, value] of Object.entries(obj)) {
-    const newPrefix = prefix ? `${prefix}-${key}` : key;
+    const sanitizedKey = key.replace(/\./g, "-");
+    const newPrefix = prefix ? `${prefix}-${sanitizedKey}` : sanitizedKey;
     if (typeof value === "object" && value !== null) {
       Object.assign(flattened, flattenTokens(value as TokenObject, newPrefix));
     } else {

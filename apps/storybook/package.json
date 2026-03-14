@@ -6,7 +6,7 @@
   "scripts": {
     "dev": "storybook dev -p 6006",
     "storybook": "yarn dev",
-    "build": "storybook build"
+    "build": "storybook build -o dist"
   },
   "devDependencies": {
     "@storybook/addon-a11y": "8.6.2",
