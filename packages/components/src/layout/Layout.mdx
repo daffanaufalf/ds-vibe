@@ -1,0 +1,40 @@
+import { Meta, Canvas, Controls } from "@storybook/blocks";
+import * as LayoutStories from "./Layout.stories";
+
+<Meta of={LayoutStories} />
+
+# Layout Foundation
+
+Foundational components for building consistent, token-driven layouts.
+
+## Box
+
+The `Box` is the most basic building block. It provides a way to apply spacing and styling using design tokens via a polymorphic `as` prop.
+
+<Canvas of={LayoutStories.BoxExample} />
+<Controls of={LayoutStories.BoxExample} />
+
+## Stack
+
+The `Stack` component is used to manage the layout of its immediate children in a linear way (either horizontally or vertically). It handles the spacing between items automatically using the `gap` prop.
+
+### Vertical Stack (Default)
+<Canvas of={LayoutStories.StackExample} />
+
+### Horizontal Stack
+<Canvas of={LayoutStories.RowStack} />
+
+## Grid
+
+The `Grid` component provides a simple way to create 2D layouts using CSS Grid.
+
+<Canvas of={LayoutStories.GridExample} />
+
+## System Props
+
+Layout components support several common props for spacing and styling:
+
+- **Spacing**: `p`, `m`, `px`, `py`, `mx`, `my`, etc. (Use CSS variables like `var(--ds-spacing-4)`).
+- **Rounding**: `borderRadius` (Use `var(--ds-radius-md)`).
+- **Elevation**: `shadow` (Use `var(--ds-shadow-sm)`).
+- **Polymorphism**: Use `as="section"`, `as="nav"`, etc.

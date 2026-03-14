@@ -1,0 +1,46 @@
+import { Meta, Canvas, Controls } from "@storybook/blocks";
+import * as CheckboxStories from "./Checkbox.stories";
+
+<Meta of={CheckboxStories} />
+
+# Checkbox
+
+A control that allows the user to select one or more options from a set. Built using Radix UI for maximum accessibility.
+
+## Features
+
+- **Radix UI Primitive**: Inherits all standard Radix Checkbox behaviors.
+- **Labeling**: Built-in support for labels and accessibility pairing.
+- **Validation**: Support for error messages and mandatory states.
+- **Indeterminate State**: Visual support for hierarchical selection.
+
+## Playground
+
+<Canvas of={CheckboxStories.Default} />
+<Controls of={CheckboxStories.Default} />
+
+## States
+
+### Checked
+
+<Canvas of={CheckboxStories.Checked} />
+
+### Indeterminate
+
+Used when a parent checkbox controls a group of children, only some of which are selected.
+
+<Canvas of={CheckboxStories.Indeterminate} />
+
+### Error State
+
+<Canvas of={CheckboxStories.ErrorState} />
+
+### Disabled
+
+<Canvas of={CheckboxStories.Disabled} />
+
+## Accessibility
+
+- **Keyboard**: Use `Space` to toggle the checkbox.
+- **Screen Readers**: Correctly identifies as a checkbox and announces label/description.
+- **Indicator**: Visual checkmark is accessible and inherits color correctly.

@@ -1,0 +1,38 @@
+import { Meta, Canvas, Controls } from "@storybook/blocks";
+import * as TypographyStories from "./Typography.stories";
+
+<Meta of={TypographyStories} />
+
+# Typography
+
+Typography is used to display text content in a clear and consistent manner across the application. It maps directly to our design tokens for font size, weight, and line height.
+
+## Text
+
+The `Text` component is used for body content, captions, and labels. It is polymorphic and defaults to a `<p>` element.
+
+<Canvas of={TypographyStories.TextScale} />
+
+## Heading
+
+The `Heading` component is used for titles and subtitles. It supports semantic levels `h1` through `h6`.
+
+<Canvas of={TypographyStories.Headings} />
+
+## Colors
+
+Typography supports semantic colors aligned with our design system.
+
+<Canvas of={TypographyStories.Colors} />
+
+## Weights
+
+Different font weights can be applied to emphasize content.
+
+<Canvas of={TypographyStories.Weights} />
+
+## Accessibility
+
+- **Semantic HTML**: Always use `Heading` with the correct level (`as="h1"`, etc.) to maintain a proper document structure.
+- **Contrast**: All default text colors against their respective backgrounds meet WCAG 2.1 AA requirements.
+- **Hierarchy**: Use consistent sizing and weights to establish a clear information hierarchy for screen reader users.

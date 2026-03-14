@@ -1,0 +1,42 @@
+import { Meta, Canvas, Controls } from "@storybook/blocks";
+import * as RadioGroupStories from "./RadioGroup.stories";
+
+<Meta of={RadioGroupStories} />
+
+# Radio Group
+
+A set of checkable buttons—known as radio buttons—where no more than one button can be checked at a time.
+
+## Features
+
+- **Radix UI Primitive**: Robust implementation of WAI-ARIA Radio Group pattern.
+- **Accessibility**: Automatic arrow key navigation and label pairing.
+- **Layouts**: Support for vertical and horizontal arrangements.
+- **Validation**: Integrated group-level error messaging.
+
+## Playground
+
+<Canvas of={RadioGroupStories.Default} />
+<Controls of={RadioGroupStories.Default} />
+
+## Orientations
+
+### Horizontal
+
+<Canvas of={RadioGroupStories.Horizontal} />
+
+## States
+
+### Error State
+
+<Canvas of={RadioGroupStories.ErrorState} />
+
+### Disabled State
+
+<Canvas of={RadioGroupStories.Disabled} />
+
+## Accessibility
+
+- **Keyboard**: Use arrow keys (`Up`, `Down`, `Left`, `Right`) to navigate between items.
+- **Screen Readers**: Announces the group label and the checked state of each item.
+- **Polymorphism**: The labels are automatically associated with their respective inputs via generated IDs.

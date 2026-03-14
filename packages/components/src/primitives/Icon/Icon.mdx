@@ -1,0 +1,33 @@
+import { Meta, Canvas, Controls } from "@storybook/blocks";
+import * as IconStories from "./Icon.stories";
+
+<Meta of={IconStories} />
+
+# Icon
+
+The `Icon` component is a wrapper around `lucide-react`, providing a consistent way to use iconography throughout the DS-Vibe design system.
+
+## Usage
+
+Pass the `name` of any [Lucide icon](https://lucide.dev/icons) to render it.
+
+<Canvas of={IconStories.Default} />
+<Controls of={IconStories.Default} />
+
+## Colors
+
+Icons inherit the current text color by default (`currentColor`) but can be explicitly colored using the `color` prop.
+
+<Canvas of={IconStories.Colors} />
+
+## Sizes
+
+Icons can be sized using numeric values (px).
+
+<Canvas of={IconStories.Sizes} />
+
+## Accessibility
+
+- Icons are rendered as SVGs.
+- If an icon is purely decorative, it should have `aria-hidden="true"` (which is the default for Lucide icons).
+- If an icon conveys meaning, ensure it is wrapped in an element with an accessible label (e.g., a `Button` with `aria-label`).

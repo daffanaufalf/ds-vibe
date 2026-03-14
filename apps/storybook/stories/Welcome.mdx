@@ -1,0 +1,46 @@
+import { Meta, Markdown } from "@storybook/blocks";
+
+<Meta title="Welcome/Introduction" />
+
+# DS-Vibe Design System
+
+Welcome to the official documentation for **DS-Vibe**, a high-performance, accessible, and token-driven design system built with React, Tailwind CSS, and Radix UI.
+
+## Core Principles
+
+- **Zero Hardcoded Values**: Every visual property is derived from design tokens.
+- **Accessibility First**: WCAG 2.1 AA compliance is baked into every component.
+- **Vibe Coding**: Optimized for rapid development and aesthetic excellence.
+
+## Technology Stack
+
+- **Framework**: React 18+ with TypeScript
+- **Styling**: Tailwind CSS with CSS Variable integration
+- **Primitives**: Radix UI for complex interactive patterns
+- **Testing**: Vitest + React Testing Library + Axe-core
+- **Environment**: Storybook 8.x + Turborepo
+
+## Getting Started
+
+To use DS-Vibe in your project, ensure you have the tokens and components packages installed.
+
+```bash
+pnpm add @ds/tokens @ds/components
+```
+
+Import the global styles in your application entry point:
+
+```tsx
+import "@ds/tokens/dist/tokens.css";
+```
+
+## Available Components
+
+Explore the sidebar to see detailed documentation and interactive playgrounds for:
+- **Primitives**: Button, Input, Icon, Checkbox, RadioGroup, Switch
+- **Layout**: Box, Stack, Grid
+- **Typography**: Text, Heading
+
+---
+
+Built with ⚡ by Antigravity.

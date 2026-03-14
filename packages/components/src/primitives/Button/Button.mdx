@@ -1,0 +1,57 @@
+import { Meta, Canvas, Controls, Story } from "@storybook/blocks";
+import * as ButtonStories from "./Button.stories";
+
+<Meta of={ButtonStories} />
+
+# Button
+
+Buttons allow users to take actions, and make choices, with a single tap. They are essential building blocks for user interaction.
+
+## When to Use
+
+- **Solid**: Used for the primary action on a page. There should typically only be one primary button per screen.
+- **Outline**: Used for secondary actions that are important but not the main focus.
+- **Ghost**: Used for tertiary actions, like "Cancel" or for actions in toolbars/menus.
+- **Link**: Used for actions that navigate or behave like links.
+- **Destructive**: Used for irreversible actions like deleting or removing data.
+
+## Playground
+
+<Canvas of={ButtonStories.Default} />
+<Controls of={ButtonStories.Default} />
+
+## Sizes
+
+The button comes in three sizes: `sm`, `md`, and `lg`.
+
+<Canvas of={ButtonStories.Small} />
+<Canvas of={ButtonStories.Default} />
+<Canvas of={ButtonStories.Large} />
+
+## States
+
+### Loading
+
+Use the `loading` prop to indicate that an action is in progress. The button is automatically disabled in this state.
+
+<Canvas of={ButtonStories.Loading} />
+
+### Disabled
+
+Use the `disabled` prop to prevent user interaction.
+
+<Canvas of={ButtonStories.Default} args={{ disabled: true }} />
+
+## Icons
+
+Buttons can include icons on either the left or right side to provide visual context.
+
+<Canvas of={ButtonStories.WithLeftIcon} />
+<Canvas of={ButtonStories.WithRightIcon} />
+
+## Accessibility
+
+- The button uses proper `aria-disabled` and `aria-busy` attributes.
+- Keyboard support: `Enter` and `Space` work as expected (native button behavior).
+- Contrast ratios are checked against WCAG 2.1 AA standards.
+- Font sizes and touch targets (minimum 44x44px for md/lg sizes) are optimized.

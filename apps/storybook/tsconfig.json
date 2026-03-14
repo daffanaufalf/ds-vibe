@@ -1,0 +1,10 @@
+{
+  "extends": "../../tsconfig.base.json",
+  "compilerOptions": {
+    "outDir": "./dist",
+    "rootDir": "./",
+    "allowJs": true
+  },
+  "include": [".storybook", "stories"],
+  "exclude": ["node_modules", "dist"]
+}

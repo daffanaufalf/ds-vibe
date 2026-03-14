@@ -1,0 +1,39 @@
+import { Meta, Canvas, Controls } from "@storybook/blocks";
+import * as SwitchStories from "./Switch.stories";
+
+<Meta of={SwitchStories} />
+
+# Switch
+
+A control that allows the user to toggle between checked and uncontrolled states.
+
+## Features
+
+- **Radix UI Primitive**: Full support for accessibility and interactions.
+- **Visual Feedback**: Smooth transitions and clear focus indicators.
+- **Labels**: Built-in support for semantic label pairing.
+
+## Playground
+
+<Canvas of={SwitchStories.Default} />
+<Controls of={SwitchStories.Default} />
+
+## States
+
+### Checked
+
+<Canvas of={SwitchStories.Checked} />
+
+### Disabled
+
+<Canvas of={SwitchStories.Disabled} />
+
+### Error State
+
+<Canvas of={SwitchStories.ErrorState} />
+
+## Accessibility
+
+- **Keyboard**: Use `Space` or `Enter` to toggle the switch.
+- **Screen Readers**: Identifies as a switch and announces checked state.
+- **Contrast**: The toggle background and thumb have high contrast for clarity.

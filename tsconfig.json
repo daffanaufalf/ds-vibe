@@ -1,0 +1,12 @@
+{
+  "extends": "./tsconfig.base.json",
+  "compilerOptions": {
+    "baseUrl": ".",
+    "paths": {
+      "@ds/tokens": ["./packages/tokens/src"],
+      "@ds/components": ["./packages/components/src"],
+      "@ds/utils": ["./packages/utils/src"]
+    }
+  },
+  "exclude": ["node_modules", "dist"]
+}

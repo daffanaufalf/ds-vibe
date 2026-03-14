@@ -1,0 +1,53 @@
+import { Meta, Canvas, Controls } from "@storybook/blocks";
+import * as InputStories from "./Input.stories";
+
+<Meta of={InputStories} />
+
+# Input
+
+Input components allow users to enter text, numbers, or other data into a form. They are designed to be highly accessible and visually consistent with the Vibe design system.
+
+## Features
+
+- **Label Support**: Built-in label management with automatic ID pairing.
+- **Validation States**: Visual and accessible feedback for error and success states.
+- **Prefix/Suffix**: Integrated slots for icons or static text.
+- **Size Variations**: Three standard sizes (sm, md, lg).
+- **ARIA Integration**: Full `aria-describedby`, `aria-invalid`, and `aria-required` support.
+
+## Playground
+
+<Canvas of={InputStories.Default} />
+<Controls of={InputStories.Default} />
+
+## With Label & Helper Text
+
+Always use labels for accessibility. Use helper text for additional context.
+
+<Canvas of={InputStories.WithHelperText} />
+
+## Validation States
+
+### Error State
+
+Use the `errorMessage` prop to show validation errors. This automatically sets `aria-invalid="true"`.
+
+<Canvas of={InputStories.ErrorState} />
+
+### Success State
+
+Use the `successMessage` prop to provide positive feedback.
+
+<Canvas of={InputStories.SuccessState} />
+
+## Icons (Prefix & Suffix)
+
+You can add icons to either end of the input to provide more visual context.
+
+<Canvas of={InputStories.WithPrefix} />
+
+## Accessibility Notes
+
+- **Labeling**: Every input should have a corresponding label. If a visual label is not desired, use `aria-label`.
+- **Error Messages**: Always provided via text and associated via `aria-describedby` so screen readers announce them.
+- **Contrast**: Input borders and text colors meet WCAG 2.1 AA contrast requirements in both light and dark modes.

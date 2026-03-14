@@ -1,0 +1,19 @@
+[13:41:41.636] [INFO] storybook v10.2.17
+[13:41:42.311] [DEBUG] Getting package.json info for C:/Users/Acer/Documents/ds-vibe/apps/storybook/package.json...
+[13:41:42.753] [INFO] Starting...
+[13:41:43.073] [DEBUG] Starting preview..
+[13:41:43.496] [DEBUG] Using tsconfig paths for react-docgen
+[13:41:43.496] [ERROR] Failed to build the preview
+[13:41:43.498] [ERROR] [38;2;241;97;97mReferenceError: __dirname is not defined[39m
+    at Object.viteFinal (file:///C:/Users/Acer/Documents/ds-vibe/apps/storybook/.storybook/main.ts:32:34)
+    at file:///C:/Users/Acer/Documents/ds-vibe/node_modules/storybook/dist/_node-chunks/chunk-LZBZZS4H.js:10114:36
+    at async createViteServer (file:///C:/Users/Acer/Documents/ds-vibe/node_modules/@storybook/builder-vite/dist/index.js:1887:21)
+    at async Module.start (file:///C:/Users/Acer/Documents/ds-vibe/node_modules/@storybook/builder-vite/dist/index.js:1912:17)
+    at async storybookDevServer (file:///C:/Users/Acer/Documents/ds-vibe/node_modules/storybook/dist/core-server/index.js:7295:83)
+    at async buildOrThrow (file:///C:/Users/Acer/Documents/ds-vibe/node_modules/storybook/dist/core-server/index.js:4506:12)
+    at async buildDevStandalone (file:///C:/Users/Acer/Documents/ds-vibe/node_modules/storybook/dist/core-server/index.js:7710:41)
+    at async withTelemetry (file:///C:/Users/Acer/Documents/ds-vibe/node_modules/storybook/dist/_node-chunks/chunk-FTTIUZEI.js:218:12)
+    at async dev (file:///C:/Users/Acer/Documents/ds-vibe/node_modules/storybook/dist/bin/core.js:2734:3)
+    at async _Command.<anonymous> (file:///C:/Users/Acer/Documents/ds-vibe/node_modules/storybook/dist/bin/core.js:2804:92)
+[13:41:43.501] [WARN] Broken build, fix the error above.
+You may need to refresh the browser.

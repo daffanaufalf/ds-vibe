@@ -1,0 +1,78 @@
+[13:17:06.539] [INFO] Storybook upgrade - v10.2.17
+[13:17:06.542] [INFO] detect-projects-spinner-start: Detecting projects...
+[13:17:06.544] [DEBUG] Finding Storybook projects...
+[13:17:06.651] [DEBUG] Found 1 Storybook projects
+[13:17:06.653] [INFO] detect-projects-spinner: Detecting projects: 1 projects
+[13:17:06.653] [DEBUG] Getting Storybook data...
+[13:17:06.653] [DEBUG] Getting Storybook info...
+[13:17:07.031] [DEBUG] SB_CORE-SERVER_0007 (MainFileEvaluationError): Storybook couldn't evaluate your [33mapps\storybook\.storybook\main.ts[39m file.
+
+Original error:
+[37mError: Cannot find module '@storybook\addon-links\package.json'
+Require stack:
+- \apps\storybook\.storybook\main.ts
+    at Module._resolveFilename (node:internal/modules/cjs/loader:1421:15)
+    at require.resolve (node:internal/modules/helpers:163:19)
+    at getAbsolutePath (file:///C:/Users/Acer/Documents/ds-vibe/apps/storybook/.storybook/main.ts:7:27)
+    at file:///C:/Users/Acer/Documents/ds-vibe/apps/storybook/.storybook/main.ts:17:5
+    at ModuleJob.run (node:internal/modules/esm/module_job:377:25)
+    at async onImport.tracePromise.__proto__ (node:internal/modules/esm/loader:671:26)
+    at async importModule (file:///C:/Users/Acer/AppData/Local/npm-cache/_npx/d80003e6561624d3/node_modules/storybook/dist/_node-chunks/chunk-5BFW6O7C.js:737:11)
+    at async loadMainConfig (file:///C:/Users/Acer/AppData/Local/npm-cache/_npx/d80003e6561624d3/node_modules/storybook/dist/_node-chunks/chunk-LZBZZS4H.js:11678:12)
+    at async getStorybookInfo (file:///C:/Users/Acer/AppData/Local/npm-cache/_npx/d80003e6561624d3/node_modules/storybook/dist/_node-chunks/chunk-LZBZZS4H.js:11798:59)
+    at async getStorybookData (file:///C:/Users/Acer/AppData/Local/npm-cache/_npx/d80003e6561624d3/node_modules/@storybook/cli/dist/_node-chunks/chunk-OSKEG7AI.js:169:7)[39m
+[13:17:07.031] [INFO] detect-projects-spinner-stop: 1 project detected
+[13:17:07.032] [DEBUG] Found 0 valid projects and 1 error projects
+[13:17:07.032] [ERROR] Failed to get projects
+[13:17:07.034] [ERROR] [38;2;241;97;97mError: ❌ Storybook found errors while collecting data for the following projects:
+C:/Users/Acer/Documents/ds-vibe/apps/storybook/.storybook:
+SB_CORE-SERVER_0007 (MainFileEvaluationError): Storybook couldn't evaluate your [33mapps\storybook\.storybook\main.ts[39m file.
+
+Original error:
+[37mError: Cannot find module '@storybook\addon-links\package.json'
+Require stack:
+- \apps\storybook\.storybook\main.ts
+    at Module._resolveFilename (node:internal/modules/cjs/loader:1421:15)
+    at require.resolve (node:internal/modules/helpers:163:19)
+    at getAbsolutePath (file:///C:/Users/Acer/Documents/ds-vibe/apps/storybook/.storybook/main.ts:7:27)
+    at file:///C:/Users/Acer/Documents/ds-vibe/apps/storybook/.storybook/main.ts:17:5
+    at ModuleJob.run (node:internal/modules/esm/module_job:377:25)
+    at async onImport.tracePromise.__proto__ (node:internal/modules/esm/loader:671:26)
+    at async importModule (file:///C:/Users/Acer/AppData/Local/npm-cache/_npx/d80003e6561624d3/node_modules/storybook/dist/_node-chunks/chunk-5BFW6O7C.js:737:11)
+    at async loadMainConfig (file:///C:/Users/Acer/AppData/Local/npm-cache/_npx/d80003e6561624d3/node_modules/storybook/dist/_node-chunks/chunk-LZBZZS4H.js:11678:12)
+    at async getStorybookInfo (file:///C:/Users/Acer/AppData/Local/npm-cache/_npx/d80003e6561624d3/node_modules/storybook/dist/_node-chunks/chunk-LZBZZS4H.js:11798:59)
+    at async getStorybookData (file:///C:/Users/Acer/AppData/Local/npm-cache/_npx/d80003e6561624d3/node_modules/@storybook/cli/dist/_node-chunks/chunk-OSKEG7AI.js:169:7)[39m
+    at loadMainConfig (file:///C:/Users/Acer/AppData/Local/npm-cache/_npx/d80003e6561624d3/node_modules/storybook/dist/_node-chunks/chunk-LZBZZS4H.js:11709:11)
+    at async getStorybookInfo (file:///C:/Users/Acer/AppData/Local/npm-cache/_npx/d80003e6561624d3/node_modules/storybook/dist/_node-chunks/chunk-LZBZZS4H.js:11798:59)
+    at async getStorybookData (file:///C:/Users/Acer/AppData/Local/npm-cache/_npx/d80003e6561624d3/node_modules/@storybook/cli/dist/_node-chunks/chunk-OSKEG7AI.js:169:7)
+    at async processProject (file:///C:/Users/Acer/AppData/Local/npm-cache/_npx/d80003e6561624d3/node_modules/@storybook/cli/dist/_node-chunks/chunk-OSKEG7AI.js:304:9)
+Please fix the errors and run the upgrade command again.[39m
+    at getProjects (file:///C:/Users/Acer/AppData/Local/npm-cache/_npx/d80003e6561624d3/node_modules/@storybook/cli/dist/_node-chunks/chunk-OSKEG7AI.js:477:13)
+    at async upgrade (file:///C:/Users/Acer/AppData/Local/npm-cache/_npx/d80003e6561624d3/node_modules/@storybook/cli/dist/_node-chunks/run-6ED5MEVK.js:9470:24)
+    at async file:///C:/Users/Acer/AppData/Local/npm-cache/_npx/d80003e6561624d3/node_modules/@storybook/cli/dist/_node-chunks/run-6ED5MEVK.js:9669:70
+    at async withTelemetry (file:///C:/Users/Acer/AppData/Local/npm-cache/_npx/d80003e6561624d3/node_modules/storybook/dist/_node-chunks/chunk-FTTIUZEI.js:218:12)
+    at async Command.<anonymous> (file:///C:/Users/Acer/AppData/Local/npm-cache/_npx/d80003e6561624d3/node_modules/@storybook/cli/dist/_node-chunks/run-6ED5MEVK.js:9665:3)
+[13:17:07.041] [INFO] Storybook collects completely anonymous usage telemetry. We use it to shape Storybook's roadmap and prioritize features. You can learn more, including how to opt out, at https://storybook.js.org/telemetry
+[13:17:07.844] [ERROR] Error: ❌ Storybook found errors while collecting data for the following projects:
+C:/Users/Acer/Documents/ds-vibe/apps/storybook/.storybook:
+SB_CORE-SERVER_0007 (MainFileEvaluationError): Storybook couldn't evaluate your [33mapps\storybook\.storybook\main.ts[39m file.
+
+Original error:
+[37mError: Cannot find module '@storybook\addon-links\package.json'
+Require stack:
+- \apps\storybook\.storybook\main.ts
+    at Module._resolveFilename (node:internal/modules/cjs/loader:1421:15)
+    at require.resolve (node:internal/modules/helpers:163:19)
+    at getAbsolutePath (file:///C:/Users/Acer/Documents/ds-vibe/apps/storybook/.storybook/main.ts:7:27)
+    at file:///C:/Users/Acer/Documents/ds-vibe/apps/storybook/.storybook/main.ts:17:5
+    at ModuleJob.run (node:internal/modules/esm/module_job:377:25)
+    at async onImport.tracePromise.__proto__ (node:internal/modules/esm/loader:671:26)
+    at async importModule (file:///C:/Users/Acer/AppData/Local/npm-cache/_npx/d80003e6561624d3/node_modules/storybook/dist/_node-chunks/chunk-5BFW6O7C.js:737:11)
+    at async loadMainConfig (file:///C:/Users/Acer/AppData/Local/npm-cache/_npx/d80003e6561624d3/node_modules/storybook/dist/_node-chunks/chunk-LZBZZS4H.js:11678:12)
+    at async getStorybookInfo (file:///C:/Users/Acer/AppData/Local/npm-cache/_npx/d80003e6561624d3/node_modules/storybook/dist/_node-chunks/chunk-LZBZZS4H.js:11798:59)
+    at async getStorybookData (file:///C:/Users/Acer/AppData/Local/npm-cache/_npx/d80003e6561624d3/node_modules/@storybook/cli/dist/_node-chunks/chunk-OSKEG7AI.js:169:7)[39m
+    at loadMainConfig (file:///C:/Users/Acer/AppData/Local/npm-cache/_npx/d80003e6561624d3/node_modules/storybook/dist/_node-chunks/chunk-LZBZZS4H.js:11709:11)
+    at async getStorybookInfo (file:///C:/Users/Acer/AppData/Local/npm-cache/_npx/d80003e6561624d3/node_modules/storybook/dist/_node-chunks/chunk-LZBZZS4H.js:11798:59)
+    at async getStorybookData (file:///C:/Users/Acer/AppData/Local/npm-cache/_npx/d80003e6561624d3/node_modules/@storybook/cli/dist/_node-chunks/chunk-OSKEG7AI.js:169:7)
+    at async processProject (file:///C:/Users/Acer/AppData/Local/npm-cache/_npx/d80003e6561624d3/node_modules/@storybook/cli/dist/_node-chunks/chunk-OSKEG7AI.js:304:9)
+Please fix the errors and run the upgrade command again.

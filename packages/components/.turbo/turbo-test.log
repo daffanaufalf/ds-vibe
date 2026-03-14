@@ -1,0 +1,60 @@
+X [ERROR] "vite-tsconfig-paths" resolved to an ESM file. ESM file cannot be loaded by `require`. See https://vite.dev/guide/troubleshooting.html#this-package-is-esm-only for more details. [plugin externalize-deps]
+
+    ../../node_modules/vite/node_modules/esbuild/lib/main.js:1225:27:
+      1225 │         let result = await callback({
+           ╵                            ^
+
+    at file:///C:/Users/Acer/Documents/ds-vibe/node_modules/vite/dist/node/chunks/dep-BK3b2jBa.js:66928:23
+    at requestCallbacks.on-resolve (C:\Users\Acer\Documents\ds-vibe\node_modules\vite\node_modules\esbuild\lib\main.js:1225:28)
+    at handleRequest (C:\Users\Acer\Documents\ds-vibe\node_modules\vite\node_modules\esbuild\lib\main.js:647:17)
+    at handleIncomingPacket (C:\Users\Acer\Documents\ds-vibe\node_modules\vite\node_modules\esbuild\lib\main.js:672:7)
+    at Socket.readFromStdout (C:\Users\Acer\Documents\ds-vibe\node_modules\vite\node_modules\esbuild\lib\main.js:600:7)
+    at Socket.emit (node:events:508:28)
+    at addChunk (node:internal/streams/readable:559:12)
+    at readableAddChunkPushByteMode (node:internal/streams/readable:510:3)
+    at Readable.push (node:internal/streams/readable:390:5)
+    at Pipe.onStreamRead (node:internal/stream_base_commons:189:23)
+
+  This error came from the "onResolve" callback registered here:
+
+    ../../node_modules/vite/node_modules/esbuild/lib/main.js:1150:20:
+      1150 │       let promise = setup({
+           ╵                     ^
+
+    at setup (file:///C:/Users/Acer/Documents/ds-vibe/node_modules/vite/dist/node/chunks/dep-BK3b2jBa.js:66890:18)
+    at handlePlugins (C:\Users\Acer\Documents\ds-vibe\node_modules\vite\node_modules\esbuild\lib\main.js:1150:21)
+    at buildOrContextImpl (C:\Users\Acer\Documents\ds-vibe\node_modules\vite\node_modules\esbuild\lib\main.js:873:5)
+    at Object.buildOrContext (C:\Users\Acer\Documents\ds-vibe\node_modules\vite\node_modules\esbuild\lib\main.js:699:5)
+    at C:\Users\Acer\Documents\ds-vibe\node_modules\vite\node_modules\esbuild\lib\main.js:2023:15
+    at new Promise (<anonymous>)
+    at Object.build (C:\Users\Acer\Documents\ds-vibe\node_modules\vite\node_modules\esbuild\lib\main.js:2022:25)
+    at build (C:\Users\Acer\Documents\ds-vibe\node_modules\vite\node_modules\esbuild\lib\main.js:1873:51)
+    at bundleConfigFile (file:///C:/Users/Acer/Documents/ds-vibe/node_modules/vite/dist/node/chunks/dep-BK3b2jBa.js:66845:24)
+
+  The plugin "externalize-deps" was triggered by this import
+
+    vitest.config.ts:4:26:
+      4 │ import tsconfigPaths from "vite-tsconfig-paths";
+        ╵                           ~~~~~~~~~~~~~~~~~~~~~
+
+[31mfailed to load config from C:\Users\Acer\Documents\ds-vibe\packages\components\vitest.config.ts[39m
+
+[31m⎯⎯⎯⎯⎯⎯[1m[7m Unhandled Error [27m[22m⎯⎯⎯⎯⎯⎯⎯[39m
+Error: Build failed with 1 error:
+../../node_modules/vite/node_modules/esbuild/lib/main.js:1225:27: ERROR: [plugin: externalize-deps] "vite-tsconfig-paths" resolved to an ESM file. ESM file cannot be loaded by `require`. See https://vite.dev/guide/troubleshooting.html#this-package-is-esm-only for more details.
+    at failureErrorWithLog (C:\Users\Acer\Documents\ds-vibe\node_modules\vite\node_modules\esbuild\lib\main.js:1472:15)
+    at C:\Users\Acer\Documents\ds-vibe\node_modules\vite\node_modules\esbuild\lib\main.js:945:25
+    at runOnEndCallbacks (C:\Users\Acer\Documents\ds-vibe\node_modules\vite\node_modules\esbuild\lib\main.js:1315:45)
+    at buildResponseToResult (C:\Users\Acer\Documents\ds-vibe\node_modules\vite\node_modules\esbuild\lib\main.js:943:7)
+    at C:\Users\Acer\Documents\ds-vibe\node_modules\vite\node_modules\esbuild\lib\main.js:970:16
+    at responseCallbacks.<computed> (C:\Users\Acer\Documents\ds-vibe\node_modules\vite\node_modules\esbuild\lib\main.js:622:9)
+    at handleIncomingPacket (C:\Users\Acer\Documents\ds-vibe\node_modules\vite\node_modules\esbuild\lib\main.js:677:12)
+    at Socket.readFromStdout (C:\Users\Acer\Documents\ds-vibe\node_modules\vite\node_modules\esbuild\lib\main.js:600:7)
+    at Socket.emit (node:events:508:28)
+    at addChunk (node:internal/streams/readable:559:12) {
+  errors: [Getter/Setter],
+  warnings: [Getter/Setter]
+}
+
+
+
